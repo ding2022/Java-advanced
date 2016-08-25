@@ -1,0 +1,33 @@
+查找 	"select * from person where"+  +"="+   ;
+删除     "delete from person where"+  +"="+   ;
+增加      "insert into person(id,name,depId,work,salary,eduid)values("
+						+ ID
+						+ ",'"
+						+ name
+						+ "',"
+						+ depId
+						+ ",'"
+						+ work
+						+ "',"
+						+ salary + "," + eduid + ")";
+更新	"update person set id="
+						+ ID
+						+ ",name='"
+						+ name
+						+ "',depId="
+						+ depId
+						+ ",work'"
+						+ work
+						+ "',salary="
+						+ salary + ",eduid=" + eduid + "where id="+id;
+						
+1.根据所输入id 对相应的数据进行操作  后期可加入  管理员密码 加上超级权限 
+超级权限的内容有：改变数据库 构建一个类 里面有封装好的响应数据库的 驱动的字符串  进行替换即可	
+2.到时候再增加一个   普通用户 的操作 
+登陆界面 会判断账户的性质 ；
+用户的功能有 ：进入软件直接进入个人信息界面 
+	可以进行的操作有 修改自己的 学历 部门 工作等
+	还可以对管理员发消息（选作）
+3.软件再加入分享 链接功能
+
+先把安卓搞着吧……可用来做毕设 把这个

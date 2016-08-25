@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<title>学生信息管理系统</title>
+
+
+
+</head>
+<body>
+
+<div class="header">
+		<h1>学生信息管理系统</h1>		
+</div>
+
+
+<div class="mform" align="left">
+
+	<form action="stuinfo_showall.jsp" method="post" name="form1">
+	<input type = "submit" value="查看所有学生" name="showall" class="submitbtn"/>
+	</from>	<br/>
+	
+	<hr/>
+
+
+	<p>添加学生</p>
+	<form action="stuinfo_add.jsp" method="post" name="form3">
+	学号：<input type = "text" placeholder="学号" name="sno"/><br/>
+	班级：<input type = "text" placeholder="班级" name="sclass"/><br/>
+	姓名：<input type = "text" placeholder="姓名" name="sname"/><br/>
+	性别：<input type = "radio" name="ssexy" value="男" checked="true"/>男
+	<input type = "radio" name="ssexy" value="女"/>女<br/><br/>
+	<input type = "submit" value="添加" name="submit" class="submitbtn"/>
+
+	</form><br/>
+	
+	
+	<p>查找学生</p>
+	<form action="stuinfo_query.jsp" method="post" name="form2">
+	<input type = "text" placeholder="姓名或学号" name="rkey"/>
+	<input type = "submit" value="查询" name="query" class="submitbtn" />
+	</form><br/>
+	
+	<p>删除学生</p>
+	<form action="stuinfo_delete.jsp" method="post" name="form4">
+	<input type = "text" placeholder="学号" name="sno"/>
+	<input type = "submit" value="删除" name="query" class="submitbtn" />
+	</form><br/>
+	
+	<hr/>
+	
+
+</div>
+
+<div class="footer">
+	<li>
+		<a href="http://www.baidu.com" target="_blank">帮助中心</a>|
+	</li>
+	<li style="color: #860000;">
+		&copy;  -   fenghao. All Rights Reserved
+	</li>
+</div>
+
+</body>
+</html>

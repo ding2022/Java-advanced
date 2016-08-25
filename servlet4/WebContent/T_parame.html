@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>测试请求参数</h1>
+	<a href="/servlet4/t_user?xxx=aaa&yyy=bbb">click</a>
+	<form action="/servlet4/t_user" method="post">
+		user:<input type="text" name="username"/><br/>
+		pass:<input type="password" name="password"/><br/>
+		hobby：<input type="checkbox" name="hobby" value="cf"/>吃饭
+		<input type="checkbox" name="hobby" value="sj"/>睡觉
+		<input type="checkbox" name="hobby" value="code"/>打代码
+		<br/>
+		<input type="submit" value="提交"/>
+	</form>
+</body>
+</html>

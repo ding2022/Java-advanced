@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!ELEMENT 书目单 (图书馆, 书目*, 出版社*, 管理员)>
+
+<!ELEMENT 图书馆 (图书馆名字, 地点, 容量, 开放时间)>
+<!ELEMENT 图书馆名字 (#PCDATA)>
+<!ELEMENT 地点 (#PCDATA)>
+<!ELEMENT 容量 (#PCDATA)>
+<!ELEMENT 开放时间 (#PCDATA)>
+
+<!ELEMENT 书目 (书目基本信息, 入库信息)>
+<!ELEMENT 书目基本信息 (书籍名称, 单价, ISBN, 书目类别, 作者, 书籍编号)>
+<!ELEMENT 书籍名称 (#PCDATA)>
+<!ELEMENT 单价 (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT 书目类别 (#PCDATA)>
+<!ELEMENT 作者 (#PCDATA)>
+<!ELEMENT 书籍编号 (#PCDATA)>
+<!ELEMENT 入库信息 (入馆时间, 入馆数量, 经办人)>
+<!ELEMENT 入馆时间 (#PCDATA)>
+<!ELEMENT 经办人 (#PCDATA)>
+<!ELEMENT 入馆数量 (#PCDATA)>
+
+<!ELEMENT 出版社 (出版社基本信息, 主要出版方向)>
+<!ELEMENT 出版社基本信息 (出版社名称, 出版社地点, 标志, 联系方式)>
+<!ELEMENT 出版社名称 (#PCDATA)>
+<!ELEMENT 出版社地点 (#PCDATA)>
+<!ELEMENT 标志 (#PCDATA)>
+<!ELEMENT 联系方式 (电话, 网址, 传真, E-MAIL)>
+<!ELEMENT 电话 (#PCDATA)>
+<!ELEMENT 网址 (#PCDATA)>
+<!ELEMENT 传真 (#PCDATA)>
+<!ELEMENT E-MAIL (#PCDATA)>
+<!ELEMENT 主要出版方向 (书目类型, 出版方向, 丛书名称)>
+<!ELEMENT 书目类型 (#PCDATA)>
+<!ELEMENT 出版方向 (#PCDATA)>
+<!ELEMENT 丛书名称 (#PCDATA)>
+
+<!ELEMENT 管理员 (编号, 姓名, 管理范围, 联系)>
+<!ELEMENT 编号 (#PCDATA)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 管理范围 (#PCDATA)>
+<!ELEMENT 联系 (管理员电话, 手机)>
+<!ELEMENT 管理员电话 (#PCDATA)>
+<!ELEMENT 手机 (#PCDATA)>

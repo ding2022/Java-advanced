@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>t12</servlet-name>
+    <servlet-class>test.t1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>t12</servlet-name>
+    <url-pattern>/t122</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>t2</servlet-name>
+    <servlet-class>test.T2</servlet-class>
+    <init-param>
+      <param-name>p1</param-name>
+      <param-value>v1</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>t2</servlet-name>
+    <url-pattern>/T2</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

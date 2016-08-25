@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="学生">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="姓名" type="xs:string"/>
+				<xs:element name="性别"/>
+				<xs:element name="年龄" type="xs:integer"/>
+			</xs:sequence>
+			<xs:attribute name="学号" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
